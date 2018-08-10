@@ -1,0 +1,154 @@
+page {
+  background-color: rgb(245, 245, 245);
+}
+
+/* 广告模块 */
+/* .adimg{
+  width: 100%;
+  height: 100%;
+} */
+
+.topGoodsView {
+  background-color: #f6f6f6;
+  width: 100%;
+  padding-bottom: 88rpx;
+}
+
+/* 倒计时模块 */
+.count_down_view {
+  height: 72rpx;
+  width: 100%;
+  background-color: #FF7969;
+  display: flex;
+  justify-content: space-between;
+}
+
+.count_down_view .count_down_view_left {
+  font-size: 24rpx;
+  color: white;
+  margin-left: 48rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+}
+
+.count_down_view .count_down_view_right {
+  margin-right: 24rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.count_down_view .count_down_view_right .count_down_view_right_text {
+  font-size: 24rpx;
+  margin-right: 24rpx;
+  color: white;
+}
+
+.count_down_view .count_down_view_right .count_down_view_right_time {
+  font-size: 32rpx;
+  color: #FF7969;
+  background-color: white;
+  margin-right: 12rpx;
+  /* width: 56rpx; */
+  height: 40rpx;
+  line-height: 40rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  text-align: center;
+  border-radius: 5rpx;
+}
+
+/* .goods_list_view {
+  margin-bottom: 106rpx;
+} */
+
+.footer {
+  width: 100%;
+  height: 88rpx;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  border-top: 2rpx solid #BDBDBD;
+}
+
+/* 购物车按钮 */
+.footer .button-view{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-left: 24rpx;
+  margin-bottom: 24rpx;
+  margin-right: 30rpx;
+  z-index: 3000;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.shopcar-button{
+  height: 90rpx;
+  width: 90rpx; 
+  border-radius: 50%;
+  background: #000;
+  opacity: 0.5;
+  position: relative;
+ 
+}
+
+.shopcar-img{
+  height: 44rpx;
+  width: 44rpx; 
+  position: absolute; 
+}
+
+.footer .footer-func {
+  position: fixed;
+  left: 140rpx;
+  bottom: 0;
+  height: 88rpx;
+  display: flex;
+  flex-direction: column;
+  /* background-color: yellow; */
+}
+
+.footer .footer-func .footer-price {
+  margin-top: 18rpx;
+  color: #E50012;
+  font-size: 26rpx;
+  height: 26rpx;
+  line-height: 26rpx;
+}
+
+.footer .footer-func .footer-distribution-fee {
+  margin-top: 12rpx;
+  color: #666666;
+  font-size: 20rpx;
+  height: 20rpx;
+  line-height: 20rpx;
+}
+
+.footer .footer-calculate {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 184rpx;
+  height: 88rpx;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 88rpx;
+  color: white;
+  background-color: #E50012;
+}
+
+.footer .footer-calculate .calculate {
+  background-color: #E50012;
+}
+
+.footer .footer-calculate .calculate text {
+  color: white;
+  font-size: 32rpx;
+}
+
+
+
+

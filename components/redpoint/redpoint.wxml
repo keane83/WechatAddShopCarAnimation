@@ -1,0 +1,4 @@
+<!--components/redpoint/redpoint.wxml-->
+<view class='red-back'>
+  <text class='point-num' hidden='{{point == 0}}'>{{point}}</text>
+</view>

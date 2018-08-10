@@ -1,0 +1,49 @@
+
+
+<view class='topGoodsView'>
+<!-- 广告模块 -->
+<image class='adimg' src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2861723625,3247131812&fm=27&gp=0.jpg' bindtap='bindADTap' mode='widthFix' style='width: 100%; display: block;'></image>
+
+
+
+  <!-- 商品列表 -->
+  <view class='goods_list_view' style='margin-bottom: 0rpx;'>
+ 
+    <block wx:for="{{goodsList}}" wx:for-item="goodsObj" wx:key="goods-index">
+      <goodsItem style="display: inline-block;" goods="{{goodsObj}}" bind:goodsItemTap="goodsItemTap" bind:goodsItemAddTap="goodsItemAddTap"></goodsItem>
+    </block>
+
+
+  </view>
+
+</view>
+
+
+
+
+<!-- 底部 -->
+<view class='footer' hidden='{{chooseId == 3 ? true : false}}'>
+  <view class='button-view' catchtap='shopcarCatchTap'>
+    <button class='shopcar-button'></button>
+    <image class='shopcar-img' src="../../assets/images/search_cart.png"></image>
+    <redpoint id='redpoint' point='{{shop_point}}'></redpoint>
+  </view>
+
+  <view class='footer-func'>
+    <view class='footer-price'>￥100.00</view>
+    <view class='footer-distribution-fee'>另需餐盒费￥1.00</view>
+  </view>
+
+  <!-- <view class='footer-calculate' catchtap='calculateTap'>
+    去结算
+  </view> -->
+
+  <form class='footer-calculate' bindsubmit="formSubmit" bindreset="formReset" report-submit="true">
+    <button class='calculate' form-type='submit' >
+      <text>去结算</text>
+    </button>
+  </form>
+</view>
+
+<canvas style="display:{{display_good_box ? 'block' : 'none'}}; position:fixed; width: 100%; height: 100%; left:0rpx; top:0rpx;" canvas-id="myCanvas" />
+

@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "redpoint": "../../../components/redpoint/redpoint",
+    "goodsItem": "../../../components/goodsitem/goodsitem"
+  },
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "商品列表"
+}

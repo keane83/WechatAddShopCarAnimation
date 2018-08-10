@@ -1,0 +1,20 @@
+/* components/redpoint/redpoint.wxss */
+
+.red-back{
+  background: #FF5252;
+  border-radius: 10px;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  position: absolute;
+  left: 50rpx;
+  top: 10rpx;
+  z-index: 5000;
+}
+
+.point-num{
+  color: #fff;
+  font-size: 10px;
+}

@@ -1,0 +1,30 @@
+<wxs module="DoubleZeroM">
+  var getDoubleZero = function(price) {
+    return price.toFixed(2);
+  }
+  module.exports.getDoubleZero = getDoubleZero;
+</wxs>
+
+<view class='goods-item' catchtap='goodsItemTap'>
+  <view class='goods-item-left'>
+    <image src='{{goods.imgurl}}' mode='aspectFill'></image>
+  </view>
+  <view class='goods-item-right'>
+    <label class='goods-item-name'>{{goods.name}}</label>
+    <view class='goods-item-desc' style="margin-top: {{goods.active_type == 'REGULAR' ? 26 : 10}}rpx;">{{goods.guige}}</view>
+    <view class='goods-item-active' wx:if="{{goods.active_type == 'SECKILL' || goods.active_type == 'PRESALE'}}">
+      <view class='goods-item-active-name' wx:if="{{goods.active_type == 'SECKILL'}}">秒</view>
+      <view class='goods-item-active-detail' wx:if="{{goods.active_type == 'SECKILL'}}">{{goods.sk_time}}{{goods.sk_open_flg == '0'?' 开始':' 结束'}}</view>
+
+      <view class='goods-item-active-name' wx:if="{{goods.active_type == 'PRESALE'}}">预</view>
+      <view class='goods-item-active-detail' wx:if="{{goods.active_type == 'PRESALE'}}">次日达</view>
+    </view>
+    <view class='goods-price-count-view'>
+      
+      <view class='goods-price-count-view-left'>
+        <label class='goods-item-price'>￥{{DoubleZeroM.getDoubleZero(goods.a_price+0)}}</label>
+      </view>
+      <image src="../../assets/images/add.png" catchtap='goodsItemAddTap'></image>
+    </view>
+  </view>
+</view>
