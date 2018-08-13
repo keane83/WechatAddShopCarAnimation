@@ -15,6 +15,6 @@
 
 AddShopCar.startAddShopAnimation([小球终点坐标, 小球起点坐标], this)
 
-4.OVER
+4.OVER 好用给个星
 
 
