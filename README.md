@@ -1,5 +1,5 @@
 # WechatAddShopCarAnimation
-小程序 购物车动画
+小程序 购物车动画 抛物线 canvas性能优
 
 使用canvas 实现添加购物车抛物线动画，性能远超view标签方式，使用方法简单
 
